@@ -1,8 +1,9 @@
-package es.expilu.instabackground;
+package es.expilu.instabackground.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
+import es.expilu.instabackground.R;
 
 public class MainActivity extends ActionBarActivity  {
 
