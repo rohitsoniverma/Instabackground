@@ -1,4 +1,6 @@
-package com.example.instabackground;
+package es.expilu.instabackground;
+
+import es.expilu.instabackground.R;
 
 import android.os.Bundle;
 import android.app.Activity;
