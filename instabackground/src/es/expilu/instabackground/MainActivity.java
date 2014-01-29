@@ -1,12 +1,10 @@
 package es.expilu.instabackground;
 
-import es.expilu.instabackground.R;
-
 import android.os.Bundle;
-import android.app.Activity;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
