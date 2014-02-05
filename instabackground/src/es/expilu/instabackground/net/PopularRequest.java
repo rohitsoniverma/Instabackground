@@ -11,8 +11,7 @@ import es.expilu.instabackground.model.Envelope;
 public class PopularRequest extends GsonRequest<Envelope> {
 
 	public PopularRequest() {		
-		super(Method.GET, InstagramApi.METHOD_POPULAR + "?"
-				+ InstagramApi.PARAM_CLIENT_ID + "=" + InstagramClient.CLIENT_ID,
+		super(Method.GET, String.format(InstagramApi.METHOD_POPULAR, InstagramClient.CLIENT_ID),
 			Envelope.class, null,
 			new Listener<Envelope>() {
 				@Override

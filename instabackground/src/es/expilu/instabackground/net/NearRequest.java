@@ -11,10 +11,7 @@ import es.expilu.instabackground.model.Envelope;
 public class NearRequest extends GsonRequest<Envelope> {
 
 	public NearRequest(double lat, double lng) {		
-		super(Method.GET, InstagramApi.METHOD_NEAR + "?"
-				+ InstagramApi.PARAM_CLIENT_ID + "=" + InstagramClient.CLIENT_ID
-				+ InstagramApi.PARAM_LATITUDE + "=" + lat
-				+ InstagramApi.PARAM_LONGITUDE + "=" + lng,
+		super(Method.GET, String.format(InstagramApi.METHOD_NEAR, InstagramClient.CLIENT_ID, lat, lng),
 			Envelope.class, null,
 			new Listener<Envelope>() {
 				@Override
