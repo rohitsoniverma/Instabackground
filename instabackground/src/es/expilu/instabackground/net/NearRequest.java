@@ -8,11 +8,13 @@ import es.expilu.instabackground.config.InstagramApi;
 import es.expilu.instabackground.config.InstagramClient;
 import es.expilu.instabackground.model.Envelope;
 
-public class PopularRequest extends GsonRequest<Envelope> {
+public class NearRequest extends GsonRequest<Envelope> {
 
-	public PopularRequest() {		
-		super(Method.GET, InstagramApi.METHOD_POPULAR + "?"
-				+ InstagramApi.PARAM_CLIENT_ID + "=" + InstagramClient.CLIENT_ID,
+	public NearRequest(double lat, double lng) {		
+		super(Method.GET, InstagramApi.METHOD_NEAR + "?"
+				+ InstagramApi.PARAM_CLIENT_ID + "=" + InstagramClient.CLIENT_ID
+				+ InstagramApi.PARAM_LATITUDE + "=" + lat
+				+ InstagramApi.PARAM_LONGITUDE + "=" + lng,
 			Envelope.class, null,
 			new Listener<Envelope>() {
 				@Override
