@@ -30,4 +30,4 @@ proguard/
 
 # Instagram api config file in which the clien_id and client_secret are stored.
 # This is to prevent disclosing them publicly. Is simply a class with static final values
-src/es/expilu/instabackground/config/InstagramApi.java
+src/es/expilu/instabackground/config/InstagramClient.java
