@@ -4,8 +4,6 @@ import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.android.volley.VolleyError;
 
-import es.expilu.instabackground.config.InstagramApi;
-import es.expilu.instabackground.config.InstagramClient;
 import es.expilu.instabackground.model.Envelope;
 
 public class PopularRequest extends GsonRequest<Envelope> {

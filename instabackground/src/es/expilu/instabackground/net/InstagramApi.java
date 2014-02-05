@@ -1,4 +1,4 @@
-package es.expilu.instabackground.config;
+package es.expilu.instabackground.net;
 
 public class InstagramApi {
 	
